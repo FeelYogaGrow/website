@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feel Yoga Grow - mit Tina</title>
+        <link rel="icon" type="image/x-icon" href="assets/image/favicon.png">
+        <link rel="stylesheet" href="assets/css/tailwind.css">
+        <link rel="stylesheet" href="assets/css/custom.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>   
+        <!-- ScrollMagic CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+     </head>
+
+    <body>
+        
+        <!-- home section -->
+        <section class="md:py-16">
+
+            <div class="container max-w-screen-xl mx-auto">
+                <nav class="flex-wrap lg:flex items-center justify-between lg:mb-10 px-8" x-data="{navbarOpen:false}">
+                    <div class="flex items-center justify-between lg:mb-0">
+                        <img class="logo" src="assets/image/logo.svg" alt="Logo">
+                        <button class="flex items-center justify-center border border-green-500 w-10 h-10 text-green-500 rounded-md outline-none lg:hidden ml-auto" @click="navbarOpen = !navbarOpen">
+                            <i data-feather="menu"></i>
+                        </button>
+                    </div>
+
+                    <ul class="hidden lg:block lg:flex flex-col lg:flex-row lg:items-center lg:space-x-10" :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
+                        <li class="font-bold text-green-500 text-lg hover:text-green-700 transition ease-in-out duration-300 mb-5 lg:mb-0 hover-underline-animation">
+                            <a href="#aboutyoga">Mein Verständnis</a>
+                        </li>
+
+                        <li class="font-bold text-green-500 text-lg hover:text-green-700 transition ease-in-out duration-300 mb-5 lg:mb-0 hover-underline-animation">
+                            <a href="#aboutme">Über mich</a>
+                        </li>
+
+                        <li class="font-bold text-green-500 text-lg hover:text-green-700 transition ease-in-out duration-300 mb-5 lg:mb-0 hover-underline-animation">
+                            <a href="#course">Mein Angebot</a>
+                        </li>
+
+
+                       <li class="px-8 py-3 bg-orange text-white font-bold text-lg text-center hover:bg-green-700 transition ease-linear duration-300 button">
+                            <a href="mailto:feelyogagrow@gmail.com">Schreib mir</a>
+                       </li>
+                    </ul>
+                </nav>
+
+                <header>
+                    <div class="container max-w-screen-xl mx-auto px-4">
+                        <div class="flex flex-col xl:flex-row items-end">
+                            
+                            <div class="md:container mx-auto xl:mx-20 mb-10 xl:mb-0 ">
+                                <img src="assets/image/header-img.png" alt="Image">
+                            </div>
+        
+                            <div class="md:container mx-auto xl:mx-0 text-center xl:text-left md:order-last mb-20">
+                                <img src="assets/image/logo_font.svg" alt="Logo" class="w-4/6 md:w-max mx-auto">
+                                
+                                <p class="font-normal text-gray-500 text-lg text-center mt-5">
+                                    Beeinflusse deinen Körper ganzheitlich positiv
+                                </p>
+                                <!--buttons-->
+                                <div class="flex items-center justify-center mt-10">
+                                    <a href="#angebot" class="px-8 py-3 bg-green-500 font-bold text-white text-md md:text-lg rounded-md hover:bg-green-700 transition ease-in-out duration-300 mr-14 button">Kursangebot</a>
+                                    <a href="#aboutme" class="lg:block font-semibold hover:text-green-700 transition ease-in-out duration-300 text-gray-500 text-lg mr-8">Über mich</a>
+                                </div>
+                            </div>
+
+                        </div>
+        
+                    </div> 
+                </header>
+            </div> <!-- container.// -->
+
+        </section>
+        <!-- home section //end -->
+
+        <!-- YOGA Lebensphilosophie -->
+        <section class="md:py-32 md:py-8" id="aboutyoga">
+
+            <div class="container max-w-screen-xl mx-auto px-4 grid justify-items-center">
+
+                <div class="max-w-2xl">
+                    <h2 class=" text-4xl text-center uppercase text-green-700">
+                        Yoga ist
+                    </h2>
+                    <h2 class=" text-4xl text-center font-bold uppercase text-green-700">
+                        Lebens&shy;philosophie
+                    </h2>
+                    <p class="font-normal text-gray-500 text-lg text-center">
+                        Für mich bedeutet Yoga mehr als nur Haltungen (Asanas) auf der Matte einzunehmen. Yoga umfasst einen achtsamen Umgang mit dir und deiner Umwelt. Das bedeutet achtsam mit deinem Körper umzugehen, dich ausgewogen und bewusst zu ernähren, dich genug zu bewegen und auszuruhen, aber auch achtsam zu sein bei den alltäglichen Dingen. Außerdem geht es für mich darum achtsam mit meinen Gedanken und meinen Glaubenssätzen umzugehen, die mich im Alltag begleiten. Yoga ist für mich eine Lebensphilosophie, die zu mehr Zufriedenheit und einem gesünderen Leben führen kann.
+                    </p>
+                </div>
+                
+                <!-- 3er-Spalte -->
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-24 py-16 ">
+                    <div class="text-center mb-10 md:mb-0">
+                        <div class="flex items-center justify-center mb-5">
+                            <img src="assets/image/illus/feel-yoga-grow_illu_mind.svg" class="illu">
+                        </div>
+                        <h2 class="mb-2 font-semibold text-green-700 text-2xl uppercase">Mind</h2>
+                        <p class="text-lg text-gray-500">
+                            Während der Yogapraxis sind wir stark mit unserer Atmung verbunden. Diese kann uns dabei helfen unseren Geist ins Hier und Jetzt zu bringen und ganz bei uns selbst anzukommen. Die ruhige, bewusste Atmung in Kombination mit den unterschiedlichen Asanas führt erwiesenermaßen zu einem geringeren Stresslevel und einer positiveren Lebenseinstellung.
+                        </p>
+                    </div>
+
+                    <div class="text-center mb-10 md:mb-0">
+                        <div class="flex items-center justify-center mb-5">
+                            <img src="assets/image/illus/feel-yoga-grow_illu_mental-health.svg" class="illu">
+                        </div>
+                        <h2 class="mb-2 font-semibold text-green-700 text-2xl uppercase">Mental health</h2>
+                        <p class="text-lg text-gray-500">
+                            Wie schön es ist einen gesunden Geist in einem gesunden Körper zu haben (lat. Redewendung). Durch den ganzheitlichen Ansatz kann Yoga dir dabei helfen eine gute mental-emotionale Verfassung zu erhalten oder zu etablieren. Das positive Yoga-Mindset „Du bist gut so wie du bist!“, die Achtsamkeit, die dir hilft dich selbst zu spüren, zusammen mit dem meditativen Effekt und der körperlichen Bewegung - all das kann dich dabei unterstützen deine mentale Gesundheit zu fördern. 
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="flex items-center justify-center mb-5">
+                            <img src="assets/image/illus/feel-yoga-grow_illu_body.svg" class="illu">
+                        </div>
+                        <h2 class="mb-2 font-semibold text-green-700 text-2xl uppercase">Body</h2>
+                        <p class="text-lg text-gray-500">
+                            Wenn du Yoga übst wird dein Körper ganzheitlich positiv beeinflusst. Die Muskulatur wird gleichzeitig gekräftigt und gedehnt, sodass du dich stabiler und aufrechter aber auch beweglicher und geschmeidiger fühlst. Durch Yoga können schmerzhafte Verspannungen und Blockaden nachhaltig gelöst werden. Außerdem werden auch unser Nerven-, Hormon-, und Herz-Kreislauf-System angeregt, was zu niedrigerem Blutdruck, einem besseren Stoffwechsel und weniger Stress führt. 
+                        </p>
+                    </div>
+                </div>
+
+            </div> <!-- container.// -->
+
+        </section>
+        <!-- section //end -->
+
+        <!-- about me -->
+        <section class="md:py-8" id="aboutme">
+
+            <div class="container max-w-screen-xl mx-auto ">
+                
+                <div class="text-center">
+                    <h2 class="signature">
+                        Hey, ich bin Tina
+                    </h2>
+                    <h2 class=" text-4xl text-center font-bold text-green-700">
+                        zertifizierte Yogalehrerin, Mama, <br> Naturliebhaberin und Bergmensch.
+                    </h2>
+                </div>
+
+                <div class="flex flex-col xl:flex-row items-center justify-between mb-10 md:mb-40">
+                    <div class="md:container md:mx-auto xl:mx-20 xl:mb-0">
+                        <img src="assets/image/feel-yoga-grow_about-me.png" alt="Image">
+                    </div>
+
+                    <div class="md:container md:mx-auto xl:mx-0 text-center xl:text-left">
+                        <p class="font-normal text-gray-500 text-lg md:mb-5">
+                            Durch meine eigene Yogapraxis bin ich in intensiven Kontakt mit mir selbst gekommen, kann mich selbst mit meinen Emotionen und Bedürfnissen besser spüren, mehr in meine Mitte kommen und Ruhe in meinen Alltag bringen. Ich liebe es mich zu bewegen, an der frischen Luft zu sein und Zeit mit lieben Menschen zu verbringen. Stillstehen ist für mich nichts. Veränderungen sind ein wesentlicher Bestandteil meines Lebens und ich liebe es dabei immer Neues zu Lernen und mich selbst weiterzuentwickeln.
+                        </p>
+                        <div class="my-8">
+                            <a href="#course" class="px-8 py-3 bg-green-500 font-medium text-white text-md md:text-lg rounded-md hover:bg-green-700 transition ease-in-out duration-300 button">Kursangebot</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- container.// -->
+
+        </section>
+
+        <!-- YOGA Arten.// -->
+        <section class="py-8 md:py-8" id="course">
+            <div class="container max-w-screen-xl mx-auto px-4">  
+                <div>
+                    <h2 class="text-4xl text-center uppercase text-green-700">
+                        Meine
+                    </h2>
+                    <h2 class="text-4xl text-center font-bold uppercase text-green-700">
+                        Unterrichts&shy;praxis
+                    </h2>
+                </div>  
+                <div class="flex flex-col xl:flex-row items-center justify-between mb-20 md:mb-40">
+                    <div class="md:container md:order-last md:mx-auto xl:mx-0">
+                        <img src="assets/image/feel-yoga-grow_flow-yoga.png" alt="Image">
+                    </div>
+
+                    <div class="md:container md:order-first md:mx-auto xl:mx-0 text-center xl:text-left mb-20 xl:mb-0">
+                        <h3 class="font-bold text-green-700 text-2xl uppercase mb-5">Yoga Abend Flow</h3>
+                        <p class="font-normal text-gray-500 text-lg mb-5">
+                            In dieser Yogastunde verbinde ich klassisches Hatha Yoga mit fließenden Elementen, die dir dabei helfen deinen Atem und deinen Körper in Einklang zu bringen. Durch An- und Entspannung können Körper und Geist ins Gleichgewicht gebracht werden, zusammen mit Atemübungen (Pranayama) kannst du so mehr Ruhe und Wohlbefinden in dein Leben bringen und deine Konzentrationsfähigkeit verbessern. Wenn du dir selbst eine Auszeit gönnen und etwas für deine Gesundheit tun möchtest, bist du hier genau richtig. Diese Art des Yoga ist auch für Anfänger geeignet, da die einzelnen Asanas im Hatha Yoga langsam eingenommen und über einen längeren Zeitraum gehalten werden, so kannst du in deinem Tempo mit den Haltungen vertraut werden. 
+                        </p>
+                        <a href="#angebot" class="px-8 py-3 bg-green-500 font-medium text-white text-md md:text-lg rounded-md hover:bg-green-700 transition ease-in-out duration-300 button">Kursangebot</a>
+
+                    </div>
+                </div>
+                <div class="flex flex-col xl:flex-row items-center justify-between mb-20 md:mb-40">
+                    <div class="md:container md:mx-auto xl:mx-0">
+                        <img src="assets/image/feel-yoga-grow_yin-yoga.png" alt="Image">
+                    </div>
+                    <div class="md:container md:mx-auto xl:mx-0 text-center xl:text-left mb-20 xl:mb-0">
+                        <h3 class="font-bold text-green-700 text-2xl uppercase mb-5">Yin Yoga</h3>
+                        <p class="font-normal text-gray-500 text-lg mb-5">
+                            Yin Yoga ist ein sehr ruhiger Yogastil, in dem wir 3-5 Minuten in den Haltungen bleiben und uns im Loslassen und Nichtstun üben. Dabei ist unser Körper völlig entspannt, sodass unser Geist zur Ruhe kommen kann und wir in Kontakt mit unserem Selbst kommen können. Yin Yoga ist ein wunderbarer Ausgleich zu unserem oft sehr Yang lastigen Alltag. Yin steht dabei für Stille, Passivität und den Mond, Yang im Gegensatz dazu ist Bewegung, Aktivität und die Sonne. Durch die lange Zeit in den Haltungen, ermöglichen wir unserem Körper eine tiefe Dehnung, bei der tiefsitzende Verspannungen gelöst werden können. Oft kommen wir hierbei auch in Kontakt mit unseren Emotionen, da diese gern in direktem Zusammenhang mit körperlichen Blockaden stehen und durch Yin Yoga gelöst werden können. Um Yin Yoga zu üben brauchst du keinerlei Vorerfahrung im Yoga, nur dich und die Zeit, um dir etwas Gutes zu tun. 
+                        </p>
+                        <a href="#angebot" class="px-8 py-3 bg-green-500 font-medium text-white text-md md:text-lg rounded-md hover:bg-green-700 transition ease-in-out duration-300 button">Kursangebot</a>
+                    </div>
+                </div>
+            </div>    
+
+        </section>    
+
+
+        <!-- Kursangebot.// -->
+        <section class="py-8 md:py-8" id="course">
+
+            <!-- 2 Arten.// -->
+            <div class="max-w-screen-xl mx-auto px-4 text-center" id="angebot">
+                <h2 class="text-4xl text-center font-bold uppercase text-green-700">
+                    Kursangebot</span>
+                </h2>  
+                <h3 class="text-2xl text-center text-green-700">
+                    Einstieg jederzeit möglich!
+                </h3>
+
+                <!-- 2er-Spalte -->
+                <div class="grid grid-cols-1 md:grid-cols-2 ">
+                    <div class="text-center mb-10 md:mb-0">
+                        <div class="flex items-center justify-center mb-5">
+                            <img src="assets/image/illus/feel-yoga-grow_illu-flow-yoga.svg" class="illu">
+                        </div>
+                        <h2 class="mb-2 font-semibold text-green-700 text-2xl">Yoga Abend Flow</h2>
+                        <p class="text-lg text-gray-500 font-bold">Donnerstag 19:30-21:00 Uhr</p>
+                        <p class="text-lg text-gray-500">Lindenstraße 3, 86420 Diedorf</p>
+                    </div>
+                    <div class="text-center mb-10 md:mb-0">
+                        <div class="flex items-center justify-center mb-5">
+                            <img src="assets/image/illus/feel-yoga-grow_illu-yin-yoga.svg" class="illu">
+                        </div>
+                        <h2 class="mb-2 font-semibold text-green-700 text-2xl uppercase">Yin Yoga</h2>
+                        <p class="text-lg text-gray-500 font-bold">Sonntag 18:00-19:30 Uhr</p>
+                        <p class="text-lg text-gray-500">Lindenstraße 3, 86420 Diedorf</p>
+                    </div>
+                </div>    
+                    <p class="text-lg text-gray-500 font-bold mb-10">10er Karte 170€ (3 Monate gültig)   |   Monatskarte 72€ (4 Termine ab Kaufdatum)   |   Einzelpreis 19€</p>
+                    <a class="px-8 py-3 bg-orange text-white font-bold text-lg text-center hover:bg-green-700 transition ease-linear duration-300 button" href="mailto:feelyogagrow@gmail.com">Gleich anmelden</a>
+            </div> <!-- container.// -->
+
+            <!-- weiteres angebot-->
+            <div class="max-w-screen-xl mx-auto px-4 py-20">
+                <h3 class="font-bold text-green-700 text-2xl uppercase text-center">
+                    Was ich auch anbiete
+                </h3>
+                <!-- 2er-Spalte -->
+                <div class="grid grid-cols-1 md:grid-cols-2 py-8 gap-x-2">
+                    <!-- Eonzelstunden-->
+                    <div class="text-center mb-10 md:mb-0">
+                        <div class="bg-orange-70">
+                            <div class="flex justify-center mb-5">
+                                <img src="assets/image/illus/feel-yoga-grow_illu-einzelstunden.svg" class="illu">
+                            </div>
+                            <h2 class="mb-2 font-semibold text-green-700 text-2xl">Einzelstunden</h2>
+                        </div>
+                        <div class="bg-orange-40">
+                            <p class="text-lg angebot">
+                                Wenn du keine Lust auf einen Gruppenkurs hast, kann ich dir auch individuelle Yogastunden vorbereiten, die auf deine Bedürfnisse zugeschnitten sind. Die Einzelstunden können im Freien oder bei dir zu Hause stattfinden. 
+                                <br> Preis auf Anfrage. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="text-center mb-10 md:mb-0">
+                        <div class="bg-green-70">
+                            <div class="flex justify-center mb-5">
+                                <img src="assets/image/illus/feel-yoga-grow_illu-gruppenyoga.svg" class="illu">
+                            </div>
+                            <h2 class="mb-2 font-semibold text-white text-2xl">Yoga im Betrieb</h2>
+                        </div>
+                        <div class="bg-green-40">
+                            <p class="text-lg angebot">
+                                Firmenyoga ist eine wunderbare Möglichkeit, um Teambuilding zu fördern, das Wohlbefinden am Arbeitsplatz zu steigern und gesunde und zufriedene Mitarbeitende zu haben. Egal ob ein Workshop im Rahmen der Gesundheitstage, oder ein fester Yogakurs im Rahmen der betrieblichen Gesundheitsförderung angeboten werden soll, ich erstelle gerne ein individuelles Angebot, welches zum Betrieb passt.
+                                <br>Preis auf Anfrage. 
+                            </p>
+                        </div>
+                    </div>
+
+                </div> <!-- Ende 2er-Spalte -->
+
+                <a class="px-8 py-3 bg-orange text-white font-bold text-lg text-center hover:bg-green-700 transition ease-linear duration-300 button" href="mailto:feelyogagrow@gmail.com">Gleich anmelden</a>
+
+            </div>
+
+        </section>
+
+        <footer class="py-16 md:py-16 footer-background">
+
+            <div class="container max-w-screen-xl mx-auto px-4">
+
+                <div class="lg:flex flex-col md:flex-row lg:justify-between items-end">
+                    <div class="mt-10">
+                        <img src="assets/image/logo_negativ.svg" alt="Image" class="mb-5 mx-auto lg:mx-0 logo">
+                    </div>
+                    <div>
+                        <h2 class="mb-2 font-semibold text-white text-2xl">Du bist gut so wie du bist!</h2>
+                        <p class="text-white text-lg mb-5">Schließ dich meiner Yoga-Praxis an!</p>
+                        <div class="">
+                            <a class="px-8 py-3 bg-orange text-white font-bold text-lg text-center hover:bg-green-700 transition ease-linear duration-300 button" href="mailto:feelyogagrow@gmail.com">Schreib mir</a>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="mt-10">
+                            <a href="https://www.instagram.com/tina_yoga_flow" target="_blank"><img src="assets/image/illus/feel-yoga-grow_illu-instagram.svg" alt="Image"></a>
+                        </div>
+                        <p class="font-normal text-white text-md md:mt-10 mt-5"><a href="impressum.html">Impressum</a></p>
+                        <p class="font-normal text-white text-md">&copy; 2023 Feel Yoga Grow. Alle Reche vorbehalten</p>
+                    </div>
+                </div>
+            </div> <!-- container.// -->
+
+        </footer>
+
+
+        <script>
+            feather.replace()
+        </script>
+
+    </body>
+</html>
