@@ -40,6 +40,14 @@ html {
     background-repeat: no-repeat;
 }
 
+/* #course {
+  background-image: url("../image/background_angebot.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+}*/
+
 .button {
     border-top-right-radius: 40px 40px;
     border-bottom-right-radius: 40px 40px;
