@@ -1,23 +1,27 @@
-:root {
-    --primary: #42A08D;
-  }
+@charset "utf-8";
 
-  @font-face {
-    font-family:'Endalmin';
-    src: local('Endalmin'),
-    url(https://feelyogagrow.de/assets/fonts/Endalmin.otf) format('otf');
- }
+@font-face {
+  font-family: Endalmin;
+  src: local('Endalmin'), url(../fonts/Endalmin.otf);
+}
 
  @font-face {
   font-family:'Evander';
-  src: local('Evander-ExtraBold'),
-  url(https://feelyogagrow.de/assets/fonts/Evander-ExtraBold.otf) format('otf');
+  src: 
+    local('Evander-ExtraBold'),
+    url(../fonts/Evander-ExtraBold.otf);
+  font-weight: bold;
 }
 
 @font-face {
   font-family:'Evander';
   src: local('Evander-ExtraLight'),
-  url(https://feelyogagrow.de/assets/fonts/Evander-ExtraLight.otf) format('otf');
+  url(../fonts/Evander-ExtraLight.otf);
+  font-weight: normal;
+}
+
+:root {
+  --primary: #42A08D;
 }
 
 html {
