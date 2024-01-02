@@ -3,10 +3,10 @@
   }
 
   @font-face {
-    font-family: Delicious;
-    src: url('fonts/Endalmin.otf')
-    format("opentype");
-    }
+    font-family:'Endalmin';
+    src: local('Endalmin'),
+    url(/fonts/Endalmin.otf) format('otf');
+ }
 
 html {
     scroll-behavior: smooth;
@@ -21,7 +21,7 @@ html {
 
 .signature {
   font-size: 6rem;
-  font-family: Endalmin;
+  font-family: 'Endalmin';
   margin: -18px;
 }
 
