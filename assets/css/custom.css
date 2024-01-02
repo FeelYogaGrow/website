@@ -5,19 +5,19 @@
   @font-face {
     font-family:'Endalmin';
     src: local('Endalmin'),
-    url(../fonts/Endalmin.otf) format('otf');
+    url(../../fonts/Endalmin.otf) format('otf');
  }
 
  @font-face {
   font-family:'Evander';
   src: local('Evander-ExtraBold'),
-  url(../fonts/Evander-ExtraBold.otf) format('otf');
+  url(assets/fonts/Evander-ExtraBold.otf) format('otf');
 }
 
 @font-face {
   font-family:'Evander';
   src: local('Evander-ExtraLight'),
-  url(../fonts/Evander-ExtraLight.otf) format('otf');
+  url(../assets/fonts/Evander-ExtraLight.otf) format('otf');
 }
 
 html {
