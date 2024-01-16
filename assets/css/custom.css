@@ -82,6 +82,10 @@ body {
     width: 35%;
 }
 
+.textlink {
+  text-decoration: underline;
+}
+
 .footer-background {
     background-image: url("../image/background_footer.svg");
     background-size: cover;
